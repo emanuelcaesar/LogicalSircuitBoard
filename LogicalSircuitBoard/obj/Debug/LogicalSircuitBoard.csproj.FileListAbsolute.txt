@@ -8,16 +8,3 @@ D:\Emanuel Caesar\Documents\Fontys Documents\OOD2\LogicalSircuitBoard\LogicalSir
 D:\Emanuel Caesar\Documents\Fontys Documents\OOD2\LogicalSircuitBoard\LogicalSircuitBoard\obj\Debug\LogicalSircuitBoard.csproj.CoreCompileInputs.cache
 D:\Emanuel Caesar\Documents\Fontys Documents\OOD2\LogicalSircuitBoard\LogicalSircuitBoard\obj\Debug\LogicalSircuitBoard.exe
 D:\Emanuel Caesar\Documents\Fontys Documents\OOD2\LogicalSircuitBoard\LogicalSircuitBoard\obj\Debug\LogicalSircuitBoard.pdb
-D:\GitHub\LogicalSircuitBoard\LogicalSircuitBoard\bin\Debug\LogicalSircuitBoard.exe.config
-D:\GitHub\LogicalSircuitBoard\LogicalSircuitBoard\bin\Debug\LogicalSircuitBoard.exe
-D:\GitHub\LogicalSircuitBoard\LogicalSircuitBoard\bin\Debug\LogicalSircuitBoard.pdb
-D:\GitHub\LogicalSircuitBoard\LogicalSircuitBoard\obj\Debug\LogicalSircuitBoard.csprojResolveAssemblyReference.cache
-D:\GitHub\LogicalSircuitBoard\LogicalSircuitBoard\obj\Debug\LogicalSircuitBoard.And.resources
-D:\GitHub\LogicalSircuitBoard\LogicalSircuitBoard\obj\Debug\LogicalSircuitBoard.Form1.resources
-D:\GitHub\LogicalSircuitBoard\LogicalSircuitBoard\obj\Debug\LogicalSircuitBoard.LogicalCircuitBoardForm.resources
-D:\GitHub\LogicalSircuitBoard\LogicalSircuitBoard\obj\Debug\LogicalSircuitBoard.Properties.Resources.resources
-D:\GitHub\LogicalSircuitBoard\LogicalSircuitBoard\obj\Debug\LogicalSircuitBoard.Source.resources
-D:\GitHub\LogicalSircuitBoard\LogicalSircuitBoard\obj\Debug\LogicalSircuitBoard.csproj.GenerateResource.Cache
-D:\GitHub\LogicalSircuitBoard\LogicalSircuitBoard\obj\Debug\LogicalSircuitBoard.csproj.CoreCompileInputs.cache
-D:\GitHub\LogicalSircuitBoard\LogicalSircuitBoard\obj\Debug\LogicalSircuitBoard.exe
-D:\GitHub\LogicalSircuitBoard\LogicalSircuitBoard\obj\Debug\LogicalSircuitBoard.pdb
