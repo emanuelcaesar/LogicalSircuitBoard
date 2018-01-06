@@ -60,6 +60,12 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Line.cs" />
+    <Compile Include="LogicalCircuitBoardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogicalCircuitBoardForm.Designer.cs">
+      <DependentUpon>LogicalCircuitBoardForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Not.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -86,8 +92,14 @@
     <Compile Include="Source.Designer.cs">
       <DependentUpon>Source.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="And.resx">
+      <DependentUpon>And.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogicalCircuitBoardForm.resx">
+      <DependentUpon>LogicalCircuitBoardForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
