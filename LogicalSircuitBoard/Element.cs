@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LogicalSircuitBoard
 {
-    class Element
+    abstract class Element
     {
         private bool isAvailable;
         private string elementId;
@@ -38,10 +38,7 @@ namespace LogicalSircuitBoard
             return elementType;
         }
 
-        public void Calculate()
-        {
-
-        }
+        public abstract void Calculate();
 
         public void CalculateStartArea(System.Drawing.Point start)
         {
