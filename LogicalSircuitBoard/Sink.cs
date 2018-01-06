@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace LogicalSircuitBoard
 {
-    public partial class Gate : UserControl
+    public partial class Sink : UserControl
     {
-        public Gate()
+        public Sink()
         {
             InitializeComponent();
+        }
+
+        private int input;
+        
+        public void Calculate()
+        {
+
         }
     }
 }

@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 *.lock
 *.ide
 *.ide-shm
@@ -9,3 +10,6 @@
 *.cache
 *.ide
 *.cache
+=======
+*.ide
+>>>>>>> origin/Caesar
