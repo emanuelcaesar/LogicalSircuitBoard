@@ -1,6 +1,6 @@
 ﻿namespace LogicalSircuitBoard
 {
-    partial class Gate
+    partial class And
     {
         /// <summary> 
         /// Required designer variable.
