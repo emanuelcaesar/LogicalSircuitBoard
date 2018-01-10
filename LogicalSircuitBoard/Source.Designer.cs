@@ -32,11 +32,13 @@
             // 
             // Source
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "Source";
-            this.Size = new System.Drawing.Size(25, 25);
+            this.Size = new System.Drawing.Size(50, 48);
+            this.Click += new System.EventHandler(this.Source_Click);
             this.ResumeLayout(false);
 
         }

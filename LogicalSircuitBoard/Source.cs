@@ -23,5 +23,10 @@ namespace LogicalSircuitBoard
         {
 
         }
+
+        private void Source_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
