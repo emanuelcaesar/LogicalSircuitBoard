@@ -36,7 +36,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
             this.Name = "Source";
-            this.Size = new System.Drawing.Size(25, 20);
+            this.Size = new System.Drawing.Size(25, 25);
             this.ResumeLayout(false);
 
         }
