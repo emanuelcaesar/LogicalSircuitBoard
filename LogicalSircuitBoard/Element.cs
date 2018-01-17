@@ -22,6 +22,10 @@ namespace LogicalSircuitBoard
             this.inputLine = inputLine;
             this.outputLine = outputLine;
         }
+        public Element()
+        {
+
+        }
 
         public bool getIsAvailable()
         {

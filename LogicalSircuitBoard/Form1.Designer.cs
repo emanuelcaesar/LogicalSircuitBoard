@@ -31,6 +31,9 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.gbOption = new System.Windows.Forms.GroupBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
@@ -57,9 +60,7 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnLine = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.source1 = new LogicalSircuitBoard.Source();
             this.gbOption.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbNor)).BeginInit();
@@ -91,6 +92,33 @@
             this.gbOption.TabIndex = 0;
             this.gbOption.TabStop = false;
             this.gbOption.Text = "Elements";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(7, 31);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(73, 37);
+            this.label6.TabIndex = 11;
+            this.label6.Text = "AND";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(7, 115);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(53, 37);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "OR";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(7, 197);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(73, 37);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "NOR";
             // 
             // panel3
             // 
@@ -125,7 +153,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(4, 6);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(34, 19);
+            this.label2.Size = new System.Drawing.Size(66, 37);
             this.label2.TabIndex = 0;
             this.label2.Text = "Sink";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -194,7 +222,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(4, 5);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(50, 19);
+            this.label1.Size = new System.Drawing.Size(97, 37);
             this.label1.TabIndex = 0;
             this.label1.Text = "Source";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -214,6 +242,7 @@
             // 
             this.pnlWorking.BackColor = System.Drawing.Color.LightGray;
             this.pnlWorking.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlWorking.Controls.Add(this.source1);
             this.pnlWorking.Controls.Add(this.hScrollBar1);
             this.pnlWorking.Location = new System.Drawing.Point(6, 23);
             this.pnlWorking.Name = "pnlWorking";
@@ -238,7 +267,7 @@
             this.exitToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(796, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(796, 49);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -249,32 +278,32 @@
             this.loadToolStripMenuItem,
             this.newToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(44, 24);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(75, 45);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(117, 26);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(197, 46);
             this.saveToolStripMenuItem.Text = "Save";
             // 
             // loadToolStripMenuItem
             // 
             this.loadToolStripMenuItem.Name = "loadToolStripMenuItem";
-            this.loadToolStripMenuItem.Size = new System.Drawing.Size(117, 26);
+            this.loadToolStripMenuItem.Size = new System.Drawing.Size(197, 46);
             this.loadToolStripMenuItem.Text = "Load";
             // 
             // newToolStripMenuItem
             // 
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(117, 26);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(197, 46);
             this.newToolStripMenuItem.Text = "New";
             this.newToolStripMenuItem.Click += new System.EventHandler(this.newToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(45, 24);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(76, 45);
             this.exitToolStripMenuItem.Text = "Exit";
             // 
             // timer1
@@ -314,7 +343,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(6, 21);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(48, 19);
+            this.label3.Size = new System.Drawing.Size(93, 37);
             this.label3.TabIndex = 3;
             this.label3.Text = "Action";
             // 
@@ -352,36 +381,18 @@
             this.button2.TabIndex = 14;
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // label4
+            // source1
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(7, 197);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(38, 19);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "NOR";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(7, 115);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(28, 19);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "OR";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(7, 31);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(38, 19);
-            this.label6.TabIndex = 11;
-            this.label6.Text = "AND";
+            this.source1.BackColor = System.Drawing.Color.Gray;
+            this.source1.Location = new System.Drawing.Point(68, 53);
+            this.source1.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
+            this.source1.Name = "source1";
+            this.source1.Size = new System.Drawing.Size(50, 48);
+            this.source1.TabIndex = 12;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 36F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(796, 670);
@@ -446,6 +457,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
+        private Source source1;
     }
 }
 
